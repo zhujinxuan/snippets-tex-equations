@@ -24,7 +24,8 @@ endsnippet
 
 snippet "\\SI([0-9e\-\+\.]*[0-9])(\S*)" "\SI{num}{unit}" ir
 \SI{`!p snip.rv = match.group(1)`}{`!p 
-snip.rv=re.sub("\^(\-?[0-9]+)", "^{\\1}", match.group(2))`}$0
+res1 = re.sub("([a-zA-Z])+(\-?[0-9]+)", "\\1^{\\2}", match.group(2))
+snip.rv=re.sub("\^(\-?[0-9]+)", "^{\\1}", res1)`}$0
 endsnippet
 
 snippet \( "\(\)" i
