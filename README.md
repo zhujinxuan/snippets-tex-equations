@@ -4,7 +4,7 @@ Simplify the LaTeX equation typing by Ultisnips
 ## Snippets
 
 1. `pdfrac<TAB>` => `\dfrac{\partial $}{\partial $}`
- - You can easily use `\dif` or other customized here, by the default insert of Ultisnips
+  - You can easily use `\dif` or other customized here, by the default insert of Ultisnips
 2. `mbf` => `\mathbf{$}`
 3. `\left?` 
   - `\left(` => `\left( $ \right)`
